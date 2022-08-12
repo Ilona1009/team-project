@@ -1,0 +1,16 @@
+.container-slider {
+    position: relative;
+}
+
+.reviews-slider__img {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+    }
+}
+
