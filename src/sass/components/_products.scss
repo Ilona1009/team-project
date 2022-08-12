@@ -1,0 +1,466 @@
+.product-box {
+    outline: 2px solid blue;
+
+    text-align: center;
+}
+
+.product-box__label {
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.product-box__title {
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 18px;
+        margin-bottom: 20px;
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 16px;
+        font-size: 58px;
+        line-height: 1.14;
+    }
+}
+
+.product-box__layout {
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    outline: 2px solid red;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+
+    }
+}
+
+.product-card__item {
+    outline: 2px solid black;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    // width: 100%;
+    // height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card__item:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-card__item:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+
+.product-card__bgr {
+    outline: 2px solid blueviolet;
+    padding: 40px;
+    border-radius: 24px;
+    margin-top: 140px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 40px 63px 60px 63px;
+    }
+
+}
+
+.product-card__bgr--first {
+    background: #ffb8ca;
+}
+
+.product-card__bgr--second {
+    background: #f0d1a5;
+}
+
+.product-card__bgr--third {
+    background: #c2e297;
+}
+
+.product-card__title-first {
+    outline: 2px solid rgb(226, 43, 70);
+
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-top: 120px;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 786px) {
+        margin-top: 78px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 125px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.product-card__title-first::before {
+    outline: 2px solid brown;
+
+    // content: url("../img/home-pic1.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+        
+}
+
+// Mobile product-pic 1x, 2x 
+
+@media screen and (max-width: 767px) {
+    .product-card__title-first::before {
+        max-width: 280px;
+        max-height: 280px;
+        content: url("../images/product-pic1.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-first::before {
+            content: url("../images/product-pic1@2x.png");
+        }
+    }
+}
+
+// // Tab product-pic 1x, 2x 
+
+@media screen and (min-width: 768px) {
+    .product-card__title-first::before {
+        max-width: 224px;
+        max-height: 224px;
+        content: url("../images/product-pic1.png");
+}
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .product-card__title-first::before {
+        content: url("../images/product-pic1@2x.png");
+    }
+}
+}
+
+// // PC product-pic 1x, 2x
+
+@media screen and (min-width: 1200px) {
+    .product-card__title-first::before {
+    max-width: 368px;
+    max-height: 394px;
+    content: url("../images/product-pic1.png");    
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .product-card__title-first::before {
+        content: url("../images/product-pic1@2x.png");    
+        }
+    }
+}
+
+.product-card__title-first::after {
+    content: url("../images/3dots.png");
+    width: 26px;
+    height: 6px;
+
+    display: flex;
+    margin: 32px auto;
+}
+
+.product-card__title-second {
+    outline: 2px solid rgb(226, 43, 70);
+
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-top: 120px;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 786px) {
+        margin-top: 78px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 125px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.product-card__title-second::before {
+    outline: 2px solid brown;
+
+    // content: url("../img/home-pic1.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+// Mobile product-pic 1x, 2x 
+
+@media screen and (max-width: 767px) {
+    .product-card__title-second::before {
+        max-width: 280px;
+        max-height: 280px;
+        content: url("../images/product-pic2.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-second::before {
+            content: url("../images/product-pic2@2x.png");
+        }
+    }
+}
+
+// // Tab product-pic 1x, 2x 
+
+@media screen and (min-width: 768px) {
+    .product-card__title-second::before {
+        max-width: 224px;
+        max-height: 224px;
+        content: url("../images/product-pic2.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-second::before {
+            content: url("../images/product-pic2@2x.png");
+        }
+    }
+}
+
+// // PC product-pic 1x, 2x
+
+@media screen and (min-width: 1200px) {
+    .product-card__title-second::before {
+        max-width: 368px;
+        max-height: 394px;
+        content: url("../images/product-pic2.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-second::before {
+            content: url("../images/product-pic2@2x.png");
+        }
+    }
+}
+
+.product-card__title-second::after {
+    content: url("../images/3dots.png");
+    width: 26px;
+    height: 6px;
+
+    display: flex;
+    margin: 32px auto;
+}
+
+.product-card__title-third {
+    outline: 2px solid rgb(226, 43, 70);
+
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-top: 120px;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 786px) {
+        margin-top: 78px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 125px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.product-card__title-third::before {
+    outline: 2px solid brown;
+
+    // content: url("../img/home-pic1.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+// Mobile product-pic 1x, 2x 
+
+@media screen and (max-width: 767px) {
+    .product-card__title-third::before {
+        max-width: 280px;
+        max-height: 280px;
+        content: url("../images/product-pic3.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-third::before {
+            content: url("../images/product-pic3@2x.png");
+        }
+    }
+}
+
+// // Tab product-pic 1x, 2x 
+
+@media screen and (min-width: 768px) {
+    .product-card__title-third::before {
+        max-width: 224px;
+        max-height: 224px;
+        content: url("../images/product-pic3.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-third::before {
+            content: url("../images/product-pic3@2x.png");
+        }
+    }
+}
+
+// // PC product-pic 1x, 2x
+
+@media screen and (min-width: 1200px) {
+    .product-card__title-third::before {
+        max-width: 368px;
+        max-height: 394px;
+        content: url("../images/product-pic3.png");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-card__title-third::before {
+            content: url("../images/product-pic3@2x.png");
+        }
+    }
+}
+
+.product-card__title-third::after {
+    content: url("../images/3dots.png");
+    width: 26px;
+    height: 6px;
+
+    display: flex;
+    margin: 32px auto;
+}
+
+.product-card__desc {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.79;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+.product-btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #ffffff;
+    fill: #d41443;
+
+    border-radius: 50%;
+
+    /* transition: background-color var(--transition-time) var(--cubic); */
+}
