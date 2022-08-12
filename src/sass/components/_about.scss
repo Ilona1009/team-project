@@ -1,10 +1,35 @@
 .about-section{
     background-color:var(--first-bgr-color);
-    &__label{
-        color: var(--secondary-accent-color);
-        text-align: center;
+    @media screen and (max-width:767px){
+    background-image: url(../images/bg-milk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    @media screen and (min-width:1200px){
+        background-image: url(../images/bg-milk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    
+    &__name{
         text-transform: uppercase;
+        font-family: 'Titan One';
         font-weight: 400;
+        text-align: center;
+    @media screen and (max-width:767px){
+        min-width: 220px;
+    }
+    @media screen and (min-width:768px){
+        min-width:429px;
+    }
+    @media screen and (min-width:1200px){
+        min-width:534px; 
+    }              
+    }
+    &__label{
+        color:var(--secondary-accent-color);
         margin-bottom: 16px;
     @media screen and (max-width:767px){
         font-size: 18px;
@@ -22,10 +47,7 @@
     }
 
     &__title{
-        color: var(--title-color);
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 400;
+        color:var(--title-color);
         line-height: 1.15;
         letter-spacing: 0.04em;
     @media screen and (max-width:767px){
@@ -62,8 +84,36 @@
         }
     }
 
+    &__content{
+        @media screen and (max-width:767px){
+            align-items: center; 
+        }
+        @media screen and (min-width:768px){
+            display: flex;
+        }
+        @media screen and (min-width:1200px){
+            display: flex;
+        }
+    
+        }
+        &__descr{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        @media screen and (max-width:767px){
+          max-width: 220px;  
+        }
+        @media screen and (min-width:768px){
+            max-width: 334px;
+        }
+        @media screen and (min-width:1200px){
+           max-width: 463px; 
+        }
+        }
+
     &__main-text{
-        color: var(--secondary-text-color);
+        color:var(--secondary-text-color);
+        font-family: 'DM Sans';
         font-weight: 500;
     @media screen and (max-width:767px){
         font-size: 12px;
@@ -77,13 +127,16 @@
         }
     @media screen and (min-width:1200px){
         font-size: 16px;
+        line-height: 176%;  
         letter-spacing: 0.04em;
         margin-bottom: 32px;
         }
     }
 
+    
     &__second-text{
         color: var(--third-text-color);
+        font-family: 'DM Sans';
         font-weight: 500;
     @media screen and (max-width:767px){
         font-size: 12px;
@@ -93,6 +146,7 @@
     @media screen and (min-width:768px){
         font-size: 14px;
         line-height: 176%;
+        letter-spacing: 0.04em; 
         margin-bottom: 40px;
         }
     @media screen and (min-width:1200px){
@@ -106,23 +160,19 @@
         width: 176px;
         height: 44px;
         background-color: var(--second-btn-color);
-        color: var(--first-btn-color);
-        font-weight: 700;
+        color:var(--first-btn-color);
         text-align: center;
-        border-radius: 22px;
-        border: none;
     @media screen and (max-width:767px){
         font-size: 14px;
         line-height: 1.29;
         }
-    @media screen and (min-width:768px){
-        font-size: 16px;
-        line-height: 1.31;
-    }
-    @media screen and (min-width:1200px){
-        font-size: 16px;
-        line-height: 1.31;
-        }
     }
 }
+// .btn{
+// &__arrow{
+//     margin-left: 13px;
+//     border: 2px solid #D41443;
+
+// }
+// }
    
