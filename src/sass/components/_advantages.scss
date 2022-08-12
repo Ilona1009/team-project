@@ -68,11 +68,13 @@
     .advantages__title {
         margin-bottom: 32px;
         font-size: 48px;
-        font-weight: 1.15;
+        line-height: 1.15;
     }
     .advantages__text {
         font-size: 14px;
-        font-weight: 1.74;
+        font-weight: 700;
+
+        line-height: 1.74;
         margin-bottom: 13px;
     }
 }
@@ -86,11 +88,12 @@
     .advantages__title {
         margin-bottom: 16px;
         font-size: 58px;
-        font-weight: 1.15;
+        line-height: 1.15;
     }
     .advantages__text {
         font-size: 16px;
-        font-weight: 1.76;
+        font-weight: 700;
+        line-height: 1.76;
     }
     .advantages__item:nth-child(1) {
         width: 288px;
