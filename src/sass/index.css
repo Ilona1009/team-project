@@ -1,0 +1,373 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding-left: 15px;
+    padding-right: 16px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+img {
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "DM Sans";
+}
+
+h1 {
+  font-family: "Titan One";
+  color: white;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header--background {
+  background-color: pink;
+}
+
+.nav {
+  display: flex;
+}
+.nav__links {
+  display: none;
+  list-style: none;
+}
+.nav__button {
+  display: flex;
+  height: 44px;
+  width: 160px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: tomato;
+  border: none;
+  border-radius: 22px;
+}
+.nav__button-arrow {
+  margin-left: 12px;
+}
+
+.header__burger-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.header__burger-button--image {
+  width: 20px;
+  height: 12px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: pink;
+}
+.hero--background {
+  background-color: pink;
+}
+.hero__heading--second-color {
+  color: tomato;
+}
+.hero__button--dark {
+  padding: 8px 13px;
+  font-size: 8px;
+  background-color: tomato;
+  color: white;
+  border-radius: 22px;
+}
+.hero__button--light {
+  padding: 8px 13px;
+  font-size: 8px;
+  background-color: white;
+  color: tomato;
+  border-radius: 22px;
+}
+.hero--milk-picture {
+  display: flex;
+}
+.hero__paragraph {
+  color: white;
+  font-size: 8px;
+  line-height: 1.5;
+}
+.hero__paragraph-button {
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+.hero__paragraph-button--image {
+  padding: 7px 1px;
+}
+.hero--right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero__circle-image {
+  position: absolute;
+}
+.hero__icecream-image {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 8px;
+  }
+  .nav__button {
+    display: none;
+  }
+  .hero {
+    height: 446px;
+  }
+  .hero--milk-picture {
+    display: none;
+  }
+  .hero--right-section {
+    display: none;
+  }
+  .hero__circle-image {
+    right: 0;
+    top: 25px;
+    z-index: 1;
+  }
+  .hero__icecream-image {
+    right: 30px;
+    top: 34px;
+    z-index: 2;
+  }
+  .hero--left-section {
+    top: 136px;
+    left: 20px;
+    position: absolute;
+    z-index: 3;
+  }
+  .hero__heading {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .hero__heading--second-color {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding-top: 32px;
+  }
+  .header__burger-button {
+    margin-right: 32px;
+  }
+  .hero {
+    height: 339px;
+  }
+  .hero__heading {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hero__heading--second-color {
+    font-size: 34px;
+  }
+  .hero--milk-picture {
+    margin-top: 20px;
+  }
+  .hero__description {
+    position: absolute;
+    left: 184px;
+    bottom: 56px;
+    z-index: 3;
+  }
+  .hero__paragraph {
+    width: 114px;
+    margin-bottom: 7px;
+  }
+  .hero__paragraph-button--image {
+    padding: 7px 1px;
+  }
+  .hero--right-section {
+    margin-top: 16px;
+  }
+  .hero__number-16 {
+    margin-bottom: 16px;
+  }
+  .hero__circle-image {
+    left: 248px;
+    bottom: 40px;
+    z-index: 1;
+  }
+  .hero__icecream-image {
+    left: 322px;
+    bottom: 0;
+    z-index: 2;
+  }
+  .hero__girl-image {
+    position: absolute;
+    right: 32px;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__burger-button {
+    display: none;
+  }
+  .header {
+    position: relative;
+    padding-top: 37px;
+  }
+  .nav__links {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    right: 340px;
+    top: 37px;
+    z-index: 3;
+    font-size: 16px;
+  }
+  .nav__links > li:not(:last-of-type) {
+    margin-right: 15px;
+  }
+  .hero__heading {
+    font-size: 38px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+  .hero__heading--second-color {
+    font-size: 58px;
+  }
+  .hero__button--dark {
+    padding: 11px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: tomato;
+    color: white;
+    border-radius: 22px;
+  }
+  .hero__button--light {
+    padding: 11px 20px;
+    font-size: 14px;
+    background-color: white;
+    color: tomato;
+    border-radius: 22px;
+  }
+  .hero--milk-picture {
+    margin-top: 40px;
+    margin-bottom: 49px;
+  }
+  .hero__description {
+    padding-top: 69px;
+  }
+  .hero__paragraph {
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 14;
+    line-height: 1.4;
+  }
+  .hero--right-section {
+    margin-top: 68px;
+  }
+  .hero__number-16 {
+    margin-bottom: 15px;
+  }
+  .hero__number-23 {
+    margin-bottom: 91px;
+  }
+  .hero__circle-image {
+    right: 149px;
+    bottom: 65px;
+    z-index: 1;
+  }
+  .hero__icecream-image {
+    right: 331px;
+    bottom: 0;
+    z-index: 2;
+  }
+  .hero__girl-image {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 3;
+  }
+}/*# sourceMappingURL=index.css.map */

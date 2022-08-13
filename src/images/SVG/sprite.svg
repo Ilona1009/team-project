@@ -35,7 +35,7 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
 </symbol>
 <symbol id="icon-arrow" viewBox="0 0 38 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M19.84 3.2l14.080 12.8-14.080 12.8M3.2 16h30.4"></path>
+<path d="M19.84 3.2l14.080 12.8-14.080 12.8M3.2 16h30.4"></path>
 </symbol>
 </defs>
 </svg>
