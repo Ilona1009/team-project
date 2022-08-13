@@ -36,7 +36,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--title-color);
 
     @media screen and (min-width: 768px) {
         margin-top: 18px;
@@ -77,8 +77,6 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    // width: 280px;
-    // height: 280px;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,19 +108,21 @@
 }
 
 .product-card__bgr--first {
-    background: #ffb8ca;
+    background-color: var(--bgr-color-ice-cream);
 }
 
 .product-card__bgr--second {
-    background: #f0d1a5;
+    background-color: var(--bgr-color-ice-coffee);
 }
 
 .product-card__bgr--third {
-    background: #c2e297;
+    background-color: var(--bgr-color-milkshakes);
 }
 
 .product-card__title-first {
     outline: 2px solid rgb(226, 43, 70);
+
+    margin-top: 120px;
 
     font-family: "Titan One";
     font-style: normal;
@@ -131,10 +131,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    margin-top: 120px;
-
-    color: #ffffff;
+    color: var(--main-text-color);
 
     @media screen and (min-width: 786px) {
         margin-top: 78px;
@@ -255,6 +252,8 @@
 .product-card__title-second {
     outline: 2px solid rgb(226, 43, 70);
 
+    margin-top: 120px;
+
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -262,10 +261,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    margin-top: 120px;
-
-    color: #ffffff;
+    color: var(--main-text-color);
 
     @media screen and (min-width: 786px) {
         margin-top: 78px;
@@ -387,6 +383,8 @@
 .product-card__title-third {
     outline: 2px solid rgb(226, 43, 70);
 
+    margin-top: 120px;
+
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -394,10 +392,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    margin-top: 120px;
-
-    color: #ffffff;
+    color: var(--main-text-color);
 
     @media screen and (min-width: 786px) {
         margin-top: 78px;
@@ -518,15 +513,15 @@
 }
 
 .product-card__desc {
+    margin-bottom: 32px;
+
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-
-    margin-bottom: 32px;
+    color: var(--main-text-color);
 
     @media screen and (min-width: 768px) {
         line-height: 1.79;
@@ -540,9 +535,9 @@
 
 .product-btn {
     display: flex;
-    // align-content: center;
+    align-items: center;
     
-    // margin: auto;
+    margin: 0 auto;
     border: 0;
     padding: 0;
     cursor: pointer;
@@ -550,16 +545,10 @@
     width: 40px;
     height: 40px;
 
-    background-color: #ffffff;
-    fill: #d41443;
+    background-color: var(--second-btn-color);
+    fill: var(--primary-accent-color);
 
     border-radius: 50%;
 
     /* transition: background-color var(--transition-time) var(--cubic); */
 }
-
-// .product-btn__icon {
-//     display: flex;
-//     // justify-content: center;
-//     align-items: center;
-// }
