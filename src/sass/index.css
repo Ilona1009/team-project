@@ -130,6 +130,9 @@ address {
   /* Btn  */
   --first-btn-color:#d41443;
   --second-btn-color:#fff;
+  --hover-btn:#ECEBEB;
+  --hover-contacts:#D41443;
+  --hover-icon-social:#D41443;
 }
 
 .about-section {
@@ -137,18 +140,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .about-section {
-    background-image: url(../images/bg-milk.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-section {
-    background-image: url(../images/bg-milk.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-bottom: 40px;
   }
 }
 .about-section__name {
@@ -244,6 +236,10 @@ address {
 @media screen and (max-width: 767px) {
   .about-section__content {
     align-items: center;
+    background-image: url(../images/bg-milk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -254,6 +250,10 @@ address {
 @media screen and (min-width: 1200px) {
   .about-section__content {
     display: flex;
+    background-image: url(../images/bg-milk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .about-section__descr {
@@ -337,12 +337,25 @@ address {
   background-color: var(--second-btn-color);
   color: var(--first-btn-color);
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .about-section__btn {
     font-size: 14px;
     line-height: 1.29;
   }
+}
+.about-section__btn:hover, .about-section__btn:focus {
+  background-color: var(--hover-btn);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn__arrow {
+  margin-left: 13px;
 }
 
 .advantages__container {
@@ -419,11 +432,12 @@ address {
   .advantages__title {
     margin-bottom: 32px;
     font-size: 48px;
-    font-weight: 1.15;
+    line-height: 1.15;
   }
   .advantages__text {
     font-size: 14px;
-    font-weight: 1.74;
+    font-weight: 700;
+    line-height: 1.74;
     margin-bottom: 13px;
   }
 }
@@ -437,11 +451,12 @@ address {
   .advantages__title {
     margin-bottom: 16px;
     font-size: 58px;
-    font-weight: 1.15;
+    line-height: 1.15;
   }
   .advantages__text {
     font-size: 16px;
-    font-weight: 1.76;
+    font-weight: 700;
+    line-height: 1.76;
   }
   .advantages__item:nth-child(1) {
     width: 288px;
