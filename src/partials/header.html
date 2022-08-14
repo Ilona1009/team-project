@@ -15,7 +15,7 @@
 
         </ul>
      
-        <button type="button" class="nav__button"> Buy now <svg class="nav__button-arrow">
+        <button type="button" class="nav__button" > Buy now <svg class="nav__button-arrow">
             <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
         </svg></button>
         
@@ -30,7 +30,7 @@
         </svg>
     </button>
 
-    <button type="button" class="header__button"> Buy now <svg class="nav__button-arrow">
+    <button type="button" class="header__button" data-modal-header-open> Buy now <svg class="nav__button-arrow">
             <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
         </svg></button>
 </div>
@@ -110,4 +110,51 @@
 
 </section>
 </div>
+
+<!-- modal -->
+
+<div class="backdrop-header is-hidden-header" data-modal-header>
+    <div class="modal-header">
+        <button class="modal-header__exit-button" data-modal-header-close>
+            <svg width="16px" height="16px" class="modal__cross-icon">
+                <use href="./images/SVG/sprite.svg#icon-close">
+                </use>
+            </svg> </button>
+
+        <div class="modal-header__field">
+
+            <form name="user-data-form" autocomplete="on">
+
+                <p class="modal-header__heading">order your tasty dream</p>
+
+                <label for="username" class="form__label-header">Name</label>
+                <div class="form__field-header">                   
+                    <input class="form__input-header" type="text" id="username" name="username" placeholder=" " />
+                </div>
+
+                <label for="phone-number" class="form__label-header">Phone</label>
+                <div class="form__field-header">                    
+                    <input class="form__input-header" type="tel" id="phone-number" name="phone-number" required>
+                </div>
+
+                <label for="email2" class="form__label-header">E-mail</label>
+                <div class="form__field">
+                    
+                    <input class="form__input-header" id="email2" type="email" name="email">
+                </div>
+
+
+                <label for="textarea" class="form__label-header">Comment</label>
+                <textarea class="text-area-header" name="textarea" id="textarea" rows="5"
+                    placeholder="input text"></textarea>                
+
+                <button type="submit" class="modal__button-header">Send</button>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="./../js/modal-header.js"></script>
 
