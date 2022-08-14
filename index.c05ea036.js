@@ -1,0 +1,2 @@
+{var refs={openModalBtn:document.querySelector("[data-modal-header-open]"),closeModalBtn:document.querySelector("[data-modal-header-close]"),modal:document.querySelector("[data-modal-header]")};function toggleModal(){refs.modal.classList.toggle("is-hidden-header")}refs.openModalBtn.addEventListener("click",toggleModal),refs.closeModalBtn.addEventListener("click",toggleModal)}
+//# sourceMappingURL=index.c05ea036.js.map
