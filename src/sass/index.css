@@ -1473,6 +1473,10 @@ address {
 }
 
 .buttom-list__btn {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
   border-color: transparent;
   display: flex;
   align-items: center;
@@ -1507,6 +1511,7 @@ address {
 .buttom-item__icon {
   fill: var(--primary-accent-color);
   margin-left: 12px;
+  margin-top: 3px;
 }
 .buttom-item__icon--light {
   fill: var(--main-text-color);
