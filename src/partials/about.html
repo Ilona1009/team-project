@@ -1,21 +1,44 @@
-<section class="about-section section">
-  <div class="container">
-    <span class="about-section__label">tradition and love</span>
-    <h2 class="about-section__title">how it’s made?</h2>
 
-    <div class="about-section__descr">
-      <p class="about-section__main-text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel jsusto
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </p>
-      <p class="about-section__second-text">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt. Aliquam erat volutpat. Aenean accumsan.
-      </p>
-      <button class="about-section__btn btn" type="button">Read more</button>
+    <div class="container">
+        <div class="about-section__name">
+            <span class="about-section__label">tradition and love</span>
+        <h2 class="about-section__title">how it’s made?</h2>
+        </div>
+        <div class="about-section__content">
+            <img class="about-section__img" 
+        srcset="./images/cow.png 1x,./images/cow@2x.png 2x " 
+        src="./images/cow.png" alt="Cow with milk">
+        <div class="about-section__descr">
+            <p class="about-section__main-text">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel jsusto cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+            <p class="about-section__second-text">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. 
+                
+                Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button  class="about-section__btn btn button-big " data-modal-open type="button">Read more
+                <svg class="btn__arrow" width="7" height="10">
+                    <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
+                </svg>
+            </button>
+        </div>
+        </div>
     </div>
-  </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal >
+    <div class="modal backdrop__modal " >
+       <button class="modal__btn" data-modal-close >
+        <svg class="modal__btn-icon" width="15" height="15">
+            <use href="./images/SVG/sprite.svg#icon-close"></use>
+        </svg>
+       </button>   
+        <div class="modal__content">
+            <h3 class="modal__title">best cows give best milk</h3>
+            <p class="modal__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore illum dignissimos vero accusantium, maiores laborum minus obcaecati reprehenderit dolorum quasi totam nostrum ex temporibus tenetur est. Quia consequatur numquam ipsam!</p>
+        </div>
+    </div>
+</div>
+
+<script src="../js/modal.js"></script>
