@@ -233,7 +233,7 @@
             border-radius: 50%;
             border: 1px solid rgba(212, 20, 67, 0.3);
         }
-        &__btn:hover,&__btn:focus{
+         &__btn:hover,&__btn:focus{
         cursor: pointer;
         fill: var(--second-btn-color);
         background-color: var(--hover-btn);
