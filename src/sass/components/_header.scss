@@ -1,6 +1,6 @@
 a{
 text-decoration: none;
-color: white;    
+color: var(--second-bgr-color);    
 }
 
 body{
@@ -10,7 +10,7 @@ body{
 
 h1{
     font-family: 'Titan One';
-    color: white;
+    color: var(--second-bgr-color);
     letter-spacing: 0.04em;
     font-style: normal;
     font-weight: 400;
@@ -22,7 +22,7 @@ h1{
     justify-content: space-between;
 
     &--background{        
-        background-color: rgba(255, 184, 202, 1);      
+        background-color: var(--header-bgr-color);      
     }
 }
 
@@ -41,15 +41,15 @@ h1{
         width: 160px;
         align-items: center;
         justify-content: center;
-        background-color: white;
-        color: rgba(212, 20, 67, 1);
+        background-color: var(--second-bgr-color);
+        color: var(--primary-accent-color);
         border: none;
         border-radius: 22px;
 
         &:hover,
         &:focus{
-            background-color: rgba(212, 20, 67, 1);
-            color: white;           
+            background-color: var(--primary-accent-color);
+            color: var(--second-bgr-color);           
         }
 
         &-arrow{
@@ -77,43 +77,43 @@ h1{
     display: flex;
     justify-content: space-between;
     position: relative;
-    background-color: rgba(255, 184, 202, 1);
+    background-color: var(--header-bgr-color);
     
 
     &--background{
-        background-color: rgba(255, 184, 202, 1);
+        background-color: var(--header-bgr-color);
     }
     
     &__heading--second-color{
-        color: rgba(212, 20, 67, 1);
+        color: var(--primary-accent-color);
     }
 
     &__button--dark{
         padding: 8px 13px;
         
         font-size: 8px;
-        background-color: rgba(212, 20, 67, 1);
-        color: white;
+        background-color: var(--primary-accent-color);
+        color: var(--second-bgr-color);
         border-radius: 22px;
 
         &:hover,
         &:focus{
-            background-color: white;
-            color: rgba(212, 20, 67, 1);
+            background-color: var(--second-bgr-color);
+            color: var(--primary-accent-color);
         }
     }
 
     &__button--light{
         padding: 8px 13px;
         font-size: 8px;
-        background-color: white;
-        color: rgba(212, 20, 67, 1);
+        background-color: var(--second-bgr-color);
+        color: var(--primary-accent-color);
         border-radius: 22px;
        
         &:hover,
         &:focus{
-            background-color: rgba(212, 20, 67, 1);
-            color: white;            
+            background-color: var(--primary-accent-color);
+            color: var(--second-bgr-color);            
         }
     }
 
@@ -122,22 +122,27 @@ h1{
     }
 
     &__paragraph{
-        color: white;
+        color: var(--second-bgr-color);
         font-size: 8px;
         line-height: 1.5;
 
         &-button{
+            width: 26px;
+            height: 26px;
             
             border-radius: 50%;
-            background-color: white;
+            background-color: var(--second-bgr-color);
             border: none;
 
             &:hover,
             &:focus{
-            background-color: rgba(212, 20, 67, 1);
+            background-color: var(--primary-accent-color);
             }
-        &--image{                        
-            padding: 7px 1px;
+        &--image{
+            width: 30px;
+            height: 30px;
+            padding-top: 9px;
+            padding-right: 3px;               
         }
         }
     }
@@ -295,7 +300,7 @@ h1{
         padding-top: 37px;
 
         &__link:hover,&__link:focus {
-            color: rgba(212, 20, 67, 1);        
+            color: var(--primary-accent-color);        
         }
     }
 
@@ -304,7 +309,7 @@ h1{
         position: absolute;
         padding: 0;
         right: 340px;
-        top: 37px;
+        top: 52px;
         z-index: 3;
         font-size: 16px;
 
@@ -330,16 +335,16 @@ h1{
     padding: 11px 20px;
     margin-right: 10px;
     font-size: 14px;
-    background-color: rgba(212, 20, 67, 1);
-    color: white;
+    background-color: var(--primary-accent-color);
+    color: var(--second-bgr-color);
     border-radius: 22px;
 }
 
 .hero__button--light {
     padding: 11px 20px;
     font-size: 14px;
-    background-color: white;
-    color: rgba(212, 20, 67, 1);
+    background-color: var(--second-bgr-color);
+    color: var(--primary-accent-color);
     border-radius: 22px;
 }
 
