@@ -1,24 +1,38 @@
 
 <header class="header--background">
-    <div class="container header">
+    <div class="header container">
         <a class="logo" href=""><img src="./images/logo.svg" alt="logo"></a>
     <nav class="nav">
-        <ul class="nav__links">
+        <input class="header__input" type="checkbox" />
+        <div class="header__menu">
+                        
+            <ul class="nav__links">
             <li><a class="header__link" href="./index.html">Home</a></li>
             <li><a class="header__link" href="#about-us">About us</a></li>
             <li><a class="header__link" href="#how-its-made">How it’s made?</a></li>
             <li><a class="header__link" href="#our-products">Our products</a></li>
             <li><a class="header__link" href="#contact">Contact</a></li>
+
         </ul>
-        <button type="button" class="header__burger-button">
+     
+        <button type="button" class="nav__button"> Buy now <svg class="nav__button-arrow">
+            <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
+        </svg></button>
+        
+         <svg class="header__menu--icon-close">
+            <use href="./images/SVG/sprite.svg#icon-close"></use>
+        </svg>
+        </div>
+    </nav>
+    <button type="button" class="header__burger-button">
             <svg class="header__burger-button--image">
             <use href="./images/SVG/sprite.svg#icon-burger"></use>
         </svg>
     </button>
-        <button type="button" class="nav__button"> Buy now <svg class="nav__button-arrow">
+
+    <button type="button" class="header__button"> Buy now <svg class="nav__button-arrow">
             <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
         </svg></button>
-    </nav>
 </div>
 
 </header>
