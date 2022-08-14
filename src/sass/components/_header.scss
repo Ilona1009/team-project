@@ -46,11 +46,13 @@ h1{
         border-radius: 22px;
         font-weight: 700;
         cursor: pointer;
+        fill: var(--primary-accent-color);
 
         &:hover,
         &:focus{
-            background-color:rgba(255, 165, 186, 1);
-            // color: var(--second-bgr-color);           
+            background-color:var(--primary-accent-color);
+            color: var(--second-bgr-color);
+            fill: var(--second-bgr-color);           
         }
 
         &-arrow{
@@ -68,6 +70,7 @@ h1{
     justify-content: center;
     background-color: var(--second-bgr-color);
     color: var(--primary-accent-color);
+    fill:var(--primary-accent-color) ;
     border: none;
     cursor: pointer;
     border-radius: 22px;
@@ -75,9 +78,20 @@ h1{
 
     &:hover,
     &:focus {
-        background-color:rgba(255, 165, 186, 1);
-        // color: var(--second-bgr-color);
+        background-color:var(--primary-accent-color);
+        color: var(--second-bgr-color);
+        fill: var(--second-bgr-color);
     }
+}
+
+.header__menu--icon-close {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    fill: var(--second-bgr-color);
 }
 
 .header__burger-button{
@@ -87,6 +101,7 @@ h1{
     background-color: transparent;
     border-radius: 22px;
     cursor: pointer;
+    fill: var(--primary-accent-color);
 
         &--image{        
         width: 20px;
@@ -160,17 +175,17 @@ h1{
             border-radius: 50%;
             cursor: pointer;
             background-color: var(--second-bgr-color);
+            fill: var(--primary-accent-color);
             border: none;
 
             &:hover,
             &:focus{
-            background-color:rgba(255, 165, 186, 1);
+            background-color:var(--primary-accent-color);
+            fill: var(--second-bgr-color);
             }
         &--image{
-            width: 30px;
-            height: 30px;
-            padding-top: 9px;
-            padding-right: 3px;               
+            width: 15px;
+            height: 10px;                       
         }
         }
     }
@@ -221,7 +236,7 @@ h1{
     background-color: rgba(225, 121, 146, 1);
     height: 100%;
     transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s var(--timing-function);
     z-index: 5;
     
 }
@@ -241,14 +256,7 @@ h1{
 .header__input:checked~.header__menu {
     transform: none;
 }
-.header__menu--icon-close{
-    width: 18px;
-    height: 18px;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+
 
 .nav__button{
     margin-top: 26px;
@@ -380,7 +388,7 @@ h1{
         .header__input {            
             display: flex;
             width: 60px;
-            height: 60px;
+            height: 45px;           
             margin-left: auto;
             margin-right: auto;
             right: 0;
@@ -390,7 +398,7 @@ h1{
             cursor: pointer;            
             opacity: 0;
             z-index: 6;
-            transform: translate(201%,16%);
+            transform: translate(201%,47%);
         }
     
         .header__input:checked~.header__menu {
@@ -592,7 +600,6 @@ padding-top: 69px;
     bottom: 0;
     z-index: 3;
 }
-
 }
 
 
