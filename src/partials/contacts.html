@@ -85,7 +85,7 @@
             </li>
         </ul>
         <ul class="buttom-list list">
-            <li class="buttom-item"><button class="buttom-list__btn" type="button" data-modal-open>Our Locations
+            <li class="buttom-item"><button class="buttom-list__btn" type="button" data-modal-open-map>Our Locations
                     <svg class="buttom-item__icon buttom-item__icon--light" width="6px" height="10px">
                         <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
                     </svg>
@@ -100,9 +100,9 @@
         </ul>
 
 
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal-map>
             <div class="modal-map">
-                <button class="btn-close" type="button" data-modal-close><svg class="icon-close" width="18px"
+                <button class="btn-close" type="button" data-modal-close-map><svg class="icon-close" width="18px"
                         height="18px">
                         <use href="./images/SVG/sprite.svg#icon-close"></use>
                     </svg></button>
@@ -149,9 +149,9 @@
         <script>
             (() => {
                 const refs = {
-                    openModalBtn: document.querySelector("[data-modal-open]"),
-                    closeModalBtn: document.querySelector("[data-modal-close]"),
-                    modal: document.querySelector("[data-modal]"),
+                    openModalBtn: document.querySelector("[data-modal-open-map]"),
+                    closeModalBtn: document.querySelector("[data-modal-close-map]"),
+                    modal: document.querySelector("[data-modal-map]"),
                 };
 
                 refs.openModalBtn.addEventListener("click", toggleModal);
@@ -162,7 +162,6 @@
                 }
             })();
         </script>
-
         <script>
             (() => {
                 const refs = {

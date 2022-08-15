@@ -1,82 +1,69 @@
-<section class="container customer-reviews" id="customer-reviews">
-  <h2 class="visually-hidden">Customer reviews</h2>
+<section class="section" >
+  <div class="container customer-reviews" id="customer-reviews">
+    <h2 class="visually-hidden">Customer reviews</h2>
 
-  <!-- Slideshow container -->
+    <!-- Slideshow container -->
 
-  <div class="container-slider">
-    <div class="reviews-slider fade">
-      <img
-        class="reviews-slider__img"
-        srcset="
-          /src/images/testimonials1.png    1x,
-          /src/images/testimonials1@2x.png 2x
-        "
-        src="/src/images/testimonials1.png"
-        alt="user photo"
-      />
-      <div class="container-review">
-        <p class="reviews-slider__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
+  <div class="one-time slider ">
+    <!-- Slide 1 -->
+    <div class="slider__reviews ">
+      <div class="reviews">
+        <img class="reviews__img"
+        srcset="./images/testimonials1.png 1x,./images/testimonials1@2x.png 2x"
+        src="./images/testimonials1.png" alt="user photo"/>
+      <div class="reviews__container">
+        <div class="lines">
+          <p class="reviews__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </div>
       </div>
-      <div class="marker-list">
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
+      <p class="reviews__client">Emily, Los Angeles</p>
       </div>
-      <p class="reviews-slider__client">Emily, Los Angeles</p>
     </div>
-
-    <div class="reviews-slider fade">
-      <img
-        class="reviews-slider__img"
-        srcset="
-          /src/images/testimonials2.png    1x,
-          /src/images/testimonials2@2x.png 2x
-        "
-        src="/src/images/testimonials2.png"
-        alt="user photo"
-      />
-      <div class="container-review">
-        <p class="reviews-slider__text">
+<!-- Slide 2 -->
+    <div class="slider__reviews ">
+      <div class="reviews">
+        <img class="reviews__img"
+        srcset="./images/testimonials2.png 1x,./images/testimonials2@2x.png 2x"
+        src="./images/testimonials2.png" alt="user photo"/>
+      <div class="reviews__container">
+        <p class="reviews__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut?
           Id doloremque fugit voluptates illum perspiciatis est, vitae saepe
           sunt doloribus vel, sed numquam!
         </p>
       </div>
-      <div class="marker-list">
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
+      <p class="reviews__client">Jesika, New York</p>
       </div>
-      <p class="reviews-slider__client">Jesika, New York</p>
     </div>
-
-    <div class="reviews-slider fade">
-      <img
-        class="reviews-slider__img"
-        srcset="
-          /src/images/testimonials3.png    1x,
-          /src/images/testimonials3@2x.png 2x
-        "
-        src="/src/images/testimonials3.png"
-        alt="user photo"
-      />
-      <div class="container-review">
-        <p class="reviews-slider__text">
+<!-- Slide 3 -->
+    <div class="slider__reviews reviews">
+      <div class="reviews">
+        <img  class="reviews__img"
+        srcset="./images/testimonials3.png 1x,./images/testimonials3@2x.png 2x"
+        src="./images/testimonials3.png" alt="user photo"/>
+      <div class="reviews__container">
+        <p class="reviews__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut?
           Id doloremque fugit voluptates illum perspiciatis est, vitae saepe
           sunt doloribus vel, sed numquam!
         </p>
       </div>
-      <div class="marker-list">
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
-        <span class="marker-list__dot"></span>
+
+      <p class="reviews__client">Anna, Chicago</p>
       </div>
-      <p class="reviews-slider__client">Anna, Chicago</p>
     </div>
+    
   </div>
+ </div>
+
+ 
 </section>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../js/slider.js"></script>
