@@ -156,3 +156,68 @@
 }
 .slider .slick-dots li.slick-active button:before {
     background-image: url(../images/dots-home.png);}
+
+/*градієнт "лінії"*/
+.reviews__container {
+    padding: 43px 50px 17px 50px;
+}
+.lines {
+    padding: 0px 8px 0px 15px;
+    width: 180px;
+    min-height: 250px;
+    border: none;
+    outline: none;
+    background:    
+        repeating-linear-gradient(
+                transparent 0px,
+                transparent 29px,
+                #E1E1E1 30px,
+                #E1E1E1 31px);
+} 
+@media screen and (min-width: 768px) {
+    .reviews__container {
+            padding: 28px 6px 36px 6px;
+            width: 620px;
+        }
+    .lines {
+        padding: 0px 49px 0px 45px;
+        width: 608px;
+          min-height: 93px;
+      }
+        .reviews__text {
+            width: 514.12;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+            color: #000000;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reviews__container {
+            padding: 47px 74px 31px 73px;
+            width: 968px;
+        }
+    .lines {
+        padding: 0px 35px 0px 36px;
+        width: 821px;
+        min-height: 65px;
+    }
+
+    .reviews__text {
+        width: 750px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #000000;
+    }
+}
