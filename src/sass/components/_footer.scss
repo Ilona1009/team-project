@@ -5,18 +5,7 @@ a {
     margin: 0;
 }
 
-
 // footer
-
-
-
-// .container {
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-//         padding-left: 16px;
-//         padding-right: 20px;        
-//     }    
-// }
-
 .footer {
     background-color: var(--first-bgr-color);
 
@@ -30,7 +19,7 @@ a {
             padding-left: 16px;
             padding-right: 20px;
         }
-        @media screen and (min-width: 786px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
 
@@ -126,8 +115,11 @@ a {
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction: column;
-            // flex-wrap: wrap; 
-            
+            align-items: flex-end;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-end;            
         }
     }
 }
@@ -135,42 +127,61 @@ a {
 .social-links {
     display: flex;
     justify-content: flex-end;
+
     margin-bottom: 40px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;        
+    }
+
+    &__item {
+
+        fill: #FEA5BB;
+    }
 
     &__item:not(:last-child) {
         margin-right: 28px;
     }  
     
     &__item:hover {
-                                     fill: #D41443;
-                                    background-color: aqua;
-                                    display: block;
+        fill: var(--hover-icon-social);
+        display: block;
+
+        transition: fill 250ms var(--timing-function) ;
     }
 }
 
-
-
 .copyright {
-    border-top: 1px solid #E1E1E1;
     background-color: var(--first-bgr-color);
 
-    padding: 16px 20px 3px 20px;
+    &__box {
+        border-top: 1px solid #E1E1E1;
+    
+        padding: 16px 20px 3px 20px;
+    
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+    
+        text-align: center;
+        color: var(--third-text-color);
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+    
+            padding: 7px 20px 4px 20px;
+    
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+        }
 
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
-
-    text-align: center;
-    color: var(--third-text-color);
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-    }
+        @media screen and (min-width:1200px) {
+                border-top: 1px solid #E1E1E1;
+                width: 1167px;
+                margin: 0 auto;
+            }
+        }
 }
