@@ -122,6 +122,18 @@ a {
             justify-content: flex-end;            
         }
     }
+    &__button {
+        // width: 32px;
+        // height: 32px;
+        border: 1px solid limegreen;
+
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        display: inline-block;
+
+
+    }
 }
 
 .social-links {
