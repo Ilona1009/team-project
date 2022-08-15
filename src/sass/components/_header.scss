@@ -206,12 +206,13 @@ h1{
 }
 
 
-
 @media screen and (max-width: 767px) {
 
 .header{     
     padding-top: 8px;
-    margin-left: 20px;    
+    margin-left: 20px;
+    padding-left: 0;
+    overflow: hidden;    
 }
 
 .header__button{
@@ -224,12 +225,11 @@ h1{
     position: absolute;
 }
 
-
 .header__menu{
     display: flex;    
     flex-direction: column-reverse;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;    
     width: 100%;
@@ -237,8 +237,7 @@ h1{
     height: 100%;
     transform: translate(100%, 0);
     transition: transform 0.5s var(--timing-function);
-    z-index: 5;
-    
+    z-index: 5;    
 }
 
 .header__input {
@@ -292,13 +291,13 @@ h1{
     height: 446px;
     
 }
-.hero--milk-picture{
+.hero--milk-picture, .hero--right-section{
     display: none;
 }
 
-.hero--right-section{
-    display: none;
-}
+// .hero--right-section{
+//     display: none;
+// }
 
 .hero__circle-image{
     right: 0;    
@@ -480,21 +479,21 @@ h1{
 
 
 @media screen and (min-width: 1200px) {
-.header__burger-button {
+.header__burger-button,.header__menu--icon-close,.nav__button,.header__input {
         display: none;
     }
 
- .header__menu--icon-close{
-    display: none;
- }
+//  .header__menu--icon-close{
+//     display: none;
+//  }
 
- .nav__button{
-    display: none;
- }
+//  .nav__button{
+//     display: none;
+//  }
 
- .header__input{
-    display: none;
- }
+//  .header__input{
+//     display: none;
+//  }
 
 
 
@@ -628,6 +627,7 @@ padding-top: 69px;
     max-width: 528px;
     left: 50%;
     top: 50%;
+    border-radius: 22px;
     transform: translate(-50%, -50%);
     background-color: var(--secondary-accent-color);    
 }
@@ -757,6 +757,7 @@ padding-top: 69px;
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .modal-header {
+        margin-top: 20px;
         width: 450px;
     }
 }
