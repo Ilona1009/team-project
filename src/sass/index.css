@@ -763,6 +763,16 @@ h1 {
     width: 450px;
   }
 }
+/*анімація кружечка*/
+.hero__circle-image {
+  transition-property: transform;
+  transition-duration: 3000ms;
+}
+
+.hero__circle-image:hover, .hero__circle-image:focus {
+  transform: scale(1.16);
+}
+
 .product-box {
   text-align: center;
 }
