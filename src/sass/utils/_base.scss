@@ -6,8 +6,11 @@ h5,
 h6,
 p {
   margin: 0;
-
 }
+
+html {
+  scroll-behavior: smooth;
+  }
 
 body.modal-open {
     overflow: hidden;
