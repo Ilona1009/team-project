@@ -135,8 +135,9 @@ a {
     }
 
     &__item {
-
         fill: #FEA5BB;
+
+        transition: fill 250ms var(--timing-function);
     }
 
     &__item:not(:last-child) {
@@ -146,8 +147,6 @@ a {
     &__item:hover {
         fill: var(--hover-icon-social);
         display: block;
-
-        transition: fill 250ms var(--timing-function) ;
     }
 }
 
