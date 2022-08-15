@@ -1249,6 +1249,12 @@ h1 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flip-back {
+    margin: 0;
+  }
+}
+
 .product-btn {
   display: flex;
   justify-content: center;
@@ -1262,7 +1268,11 @@ h1 {
   background-color: var(--second-btn-color);
   fill: var(--primary-accent-color);
   border-radius: 50%;
-  /* transition: background-color var(--transition-time) var(--cubic); */
+  transition: 250ms var(--timing-function);
+}
+
+.product-btn:hover {
+  background-color: var(--hover-btn);
 }
 
 .flip {
@@ -1281,17 +1291,10 @@ h1 {
 
 .flip__flip-face--back {
   position: absolute;
-  top: -139px;
   bottom: 0;
-  height: 499px;
   transform: perspective(400px) rotateY(180deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}
-@media screen and (min-width: 1200px) {
-  .flip__flip-face--back {
-    top: -270px;
-  }
 }
 
 .about-section {
@@ -1820,6 +1823,7 @@ h1 {
 }
 
 .small:hover {
+  z-index: 30;
   transform: scale(1.5);
   box-shadow: 0px 15px 15px rgba(37, 36, 37, 0.1);
 }
