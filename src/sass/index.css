@@ -763,6 +763,16 @@ h1 {
     width: 450px;
   }
 }
+/*анімація кружечка*/
+.hero__circle-image {
+  transition-property: transform;
+  transition-duration: 3000ms;
+}
+
+.hero__circle-image:hover, .hero__circle-image:focus {
+  transform: scale(1.16);
+}
+
 .product-box {
   text-align: center;
 }
@@ -854,16 +864,18 @@ h1 {
 .product-card__bgr {
   padding: 40px;
   border-radius: 24px;
-  margin-top: 140px;
+  margin-top: 148px;
 }
 @media screen and (min-width: 768px) {
   .product-card__bgr {
     padding: 40px 32px;
+    margin-top: 158px;
   }
 }
 @media screen and (min-width: 1200px) {
   .product-card__bgr {
     padding: 40px 63px 60px 63px;
+    margin-top: 280px;
   }
 }
 
@@ -907,7 +919,7 @@ h1 {
   .product-card__title-first::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 280px;
@@ -933,7 +945,7 @@ h1 {
   .product-card__title-first::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 224px;
@@ -959,7 +971,7 @@ h1 {
   .product-card__title-first::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -280px;
     left: 0;
     content: "";
     width: 368px;
@@ -1019,7 +1031,7 @@ h1 {
   .product-card__title-second::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 280px;
@@ -1045,7 +1057,7 @@ h1 {
   .product-card__title-second::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 224px;
@@ -1071,7 +1083,7 @@ h1 {
   .product-card__title-second::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -280px;
     left: 0;
     content: "";
     width: 368px;
@@ -1131,7 +1143,7 @@ h1 {
   .product-card__title-third::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 280px;
@@ -1157,7 +1169,7 @@ h1 {
   .product-card__title-third::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 0;
     content: "";
     width: 224px;
@@ -1183,7 +1195,7 @@ h1 {
   .product-card__title-third::before {
     display: block;
     position: absolute;
-    top: 0;
+    top: -280px;
     left: 0;
     content: "";
     width: 368px;
@@ -1237,6 +1249,12 @@ h1 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flip-back {
+    margin: 0;
+  }
+}
+
 .product-btn {
   display: flex;
   justify-content: center;
@@ -1250,7 +1268,33 @@ h1 {
   background-color: var(--second-btn-color);
   fill: var(--primary-accent-color);
   border-radius: 50%;
-  /* transition: background-color var(--transition-time) var(--cubic); */
+  transition: 250ms var(--timing-function);
+}
+
+.product-btn:hover {
+  background-color: var(--hover-btn);
+}
+
+.flip {
+  transform-style: preserve-3d; /* Вращение в 3D */
+  transition: all 1s linear; /* Время вращения */
+}
+
+.flip:hover {
+  transform: perspective(400px) rotateY(180deg);
+}
+
+.flip__flip-face--front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip__flip-face--back {
+  position: absolute;
+  bottom: 0;
+  transform: perspective(400px) rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .about-section {
@@ -1779,6 +1823,7 @@ h1 {
 }
 
 .small:hover {
+  z-index: 30;
   transform: scale(1.5);
   box-shadow: 0px 15px 15px rgba(37, 36, 37, 0.1);
 }
@@ -1881,7 +1926,7 @@ h1 {
 .reviews__container::after {
   content: " ";
   position: absolute;
-  background-image: url("../images/3dots.png");
+  background-image: url("../images/3dots-slider.png");
   width: 32px;
   height: 4px;
   bottom: -16px;
