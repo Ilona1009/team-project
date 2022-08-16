@@ -91,9 +91,11 @@
         }
         @media screen and (min-width:768px){
             display: flex;
+            align-items: center; 
         }
         @media screen and (min-width:1200px){
             display: flex;
+            align-items: center; 
             background-image: url(../images/bg-milk.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -173,7 +175,7 @@
         background-color: var(--second-btn-color);
         color:var(--first-btn-color);
         text-align: center;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var( --timing-function) 250ms;
     @media screen and (max-width:767px){
         font-size: 14px;
         line-height: 1.29;
@@ -219,7 +221,7 @@
         left: 50%;
         background-color:var(--first-bgr-color);
         transform: translate(-50%,-50%) scale(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms var( --timing-function);
        
         &__btn{
             display: flex;
