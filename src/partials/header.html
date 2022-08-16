@@ -3,28 +3,38 @@
     <div class="header container">
         <a class="logo" href=""><img src="./images/logo.svg" alt="logo"></a>
     <nav class="nav">
-        <input class="header__input" type="checkbox" />
-        <div class="header__menu">
-                        
-            <ul class="nav__links">
+
+        <ul class="nav__links--desktop ">
             <li><a class="header__link" href="./index.html">Home</a></li>
             <li><a class="header__link" href="#about-us">About us</a></li>
             <li><a class="header__link" href="#how-its-made">How it’s made?</a></li>
             <li><a class="header__link" href="#our-products">Our products</a></li>
             <li><a class="header__link" href="#contact">Contact</a></li>
-
         </ul>
+        <!-- <input class="header__input" type="checkbox" /> -->
+        <div class="header__menu" id="header__menu" data-menu>
+                        
+            <ul class="nav__links ">
+            <li><a class="header__link" href="./index.html">Home</a></li>
+            <li><a class="header__link" href="#about-us">About us</a></li>
+            <li><a class="header__link" href="#how-its-made">How it’s made?</a></li>
+            <li><a class="header__link" href="#our-products">Our products</a></li>
+            <li><a class="header__link" href="#contact">Contact</a></li>
+            </ul>
      
         <button type="button" class="nav__button" data-modal-nav-open> Buy now <svg class="nav__button-arrow">
             <use href="./images/SVG/sprite.svg#icon-arrow-small"></use>
         </svg></button>
         
-         <svg class="header__menu--icon-close">
+         <svg class="header__menu--icon-close is-close"  aria-expanded="false" 
+                    data-menu-button-close>
             <use href="./images/SVG/sprite.svg#icon-close"></use>
         </svg>
         </div>
     </nav>
-    <button type="button" class="header__burger-button">
+    <button type="button" class="header__burger-button is-open" aria-expanded="true"
+                aria-controls="header__menu" 
+                data-menu-button-open>
             <svg class="header__burger-button--image">
             <use href="./images/SVG/sprite.svg#icon-burger"></use>
         </svg>
@@ -64,9 +74,7 @@
             <svg class="hero__paragraph-button--image">
                 <use href="./images/SVG/sprite.svg#icon-arrow"></use>
             </svg>
-        </button>
-
-        
+        </button>        
         </p>
     
 
@@ -111,6 +119,8 @@
     <source srcset="./images/hero-circle-desktop.png" media="(min-width:1200px)">
     <img src="./images/hero-circle-tablet.png" alt="circle behind icecream">
 </picture>
+
+<P class="promocode">Промокод:<br><span class="ice-unicorn">Від<span class="ice-unicorn2">морожені</span><br> <span class="unicorne1">є</span><span class="unicorne2">д</span><span class="unicorne3">и</span><span class="unicorne4">н</span><span class="unicorne5">о</span><span class="unicorne6">р</span><span class="unicorne7">о</span><span class="unicorne8">г</span><span class="unicorne9">и</span></span></P>
 
 <picture class="hero__icecream-image">
     <source srcset="./images/hero-icecream-mobile.png 1x, ./images/hero-icecream-mobile@2x.png 2x"
@@ -173,3 +183,4 @@
 </div>
 
 <script src="./../js/modal-header.js"></script>
+<script src="./../js/mobile-menu.js"></script>
