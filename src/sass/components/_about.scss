@@ -91,9 +91,11 @@
         }
         @media screen and (min-width:768px){
             display: flex;
+            align-items: center; 
         }
         @media screen and (min-width:1200px){
             display: flex;
+            align-items: center; 
             background-image: url(../images/bg-milk.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -173,7 +175,7 @@
         background-color: var(--second-btn-color);
         color:var(--first-btn-color);
         text-align: center;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var( --timing-function) 250ms;
     @media screen and (max-width:767px){
         font-size: 14px;
         line-height: 1.29;
@@ -193,51 +195,51 @@
     fill: var(--first-btn-color);
 }
 }
-   
 
-.backdrop{
+.backdrop {
+    z-index: 1;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(194, 226, 151, 0.5) ;
-    opacity: 1;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.is-hidden .modal{
+    transition: opacity var(--timing-function) 250ms,
+      visibility var(--timing-function) 250ms;
+      &.is-hidden .modal{
         transform: translate(-50%,-50%) scale(0.9);
     }
-    }
+  }
+  
+
+
     .modal{
         max-width: 550px;
         position: absolute;
-        padding: 40px;
+        padding: 50px;
         top: 50%;
         left: 50%;
         background-color:var(--first-bgr-color);
         transform: translate(-50%,-50%) scale(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms var( --timing-function);
+       
         &__btn{
-            position: absolute;
             display: flex;
-            top: 8px;
-            right: 8px;
-            width:30px; 
-            height: 30px;
-            padding: 0;
             align-items: center;
             justify-content: center;
-            fill: var(--first-btn-color);
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid transparent;
             background-color: var(--second-btn-color);
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             border-radius: 50%;
-            border: 1px solid rgba(212, 20, 67, 0.3);
+            cursor: pointer;
+            transition: 250ms var(--timing-function);
         }
          &__btn:hover,&__btn:focus{
-        cursor: pointer;
-        fill: var(--second-btn-color);
-        background-color: var(--hover-btn);
-        border-color: rgba(0, 0, 0, 0.1 );
+            box-shadow: 0 0 10px 5px rgba(212, 20, 67, 0.1);
         }
 
 

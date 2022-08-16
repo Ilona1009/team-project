@@ -1,0 +1,197 @@
+// resets
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+// footer
+.footer {
+    background-color: var(--first-bgr-color);
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    &__container {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-left: 16px;
+            padding-right: 20px;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+    }
+
+    &__title-box {
+        font-family: Titan One;
+        font-style: normal;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 767px) {
+            max-width: 234px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 340px;
+        }
+    }
+
+    &__sub-title {
+        margin-bottom: 16px;
+
+        font-size: 18px;
+        line-height: 1.17;
+
+        color: var(--secondary-accent-color);
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 12px;
+
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 1.13;
+            letter-spacing: 0.04em
+        }
+    }
+
+    &__title {
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        
+        color: var(--title-color);
+
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            letter-spacing: 0.06em;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+            line-height: 1.14;
+        }
+    }
+
+    &__tel {
+        display: block;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.86;
+
+        text-align: right;
+        color: var(--secondary-text-color);
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
+    }
+
+    &__tel-link {
+        color: var(--primary-accent-color);
+    }
+
+    &__contacts {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-end;            
+        }
+    }
+    &__btn-up {
+        position: fixed;
+        right: 30px;
+        bottom: 20px;
+        display: inline-block;
+        cursor: pointer;
+        fill: #FEA5BB;
+        opacity: 0.4;
+        transition: 250ms var(--timing-function);
+    }
+}
+
+.footer__btn-up:hover {
+    opacity: 1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;        
+    }
+
+    &__item {
+        fill: #FEA5BB;
+
+        transition: fill 250ms var(--timing-function);
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 28px;
+    }  
+    
+    &__item:hover {
+        fill: var(--hover-icon-social);
+        display: block;
+    }
+}
+
+.copyright {
+    background-color: var(--first-bgr-color);
+    border-top: 1px solid #E1E1E1;
+
+    padding: 16px 20px 3px 20px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    text-align: center;
+    color: var(--third-text-color);
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+
+        padding: 7px 20px 4px 20px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
+
+    // @media screen and (min-width:1200px) {
+    //         border-top: 1px solid #E1E1E1;
+    //         width: 1167px;
+    //         margin: 0 auto;
+    //     }
+        
+}
