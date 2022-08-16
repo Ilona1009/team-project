@@ -539,6 +539,12 @@
     }
 }
 
+.flip-back {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 0;
+    }    
+}
+
 .product-btn {
     display: flex;
     justify-content: center;
@@ -548,7 +554,6 @@
     height: 40px;
     
     margin: 0 auto;
-
     border: 0;
     padding: 0;
     cursor: pointer;
@@ -556,7 +561,11 @@
     fill: var(--primary-accent-color);
     border-radius: 50%;
 
-    /* transition: background-color var(--transition-time) var(--cubic); */
+    transition: 250ms var(--timing-function);
+}
+
+.product-btn:hover {
+    background-color: var(--hover-btn)
 }
 
 // Flip
@@ -575,13 +584,7 @@
   }
   .flip__flip-face--back {
     position: absolute;
-    top: -139px;
     bottom: 0;
-    height: 499px;
     transform: perspective(400px) rotateY(180deg);
     backface-visibility: hidden;
-    @media screen and (min-width:1200px) {
-        top: -270px;   
-        
-    }
-  }
+}
