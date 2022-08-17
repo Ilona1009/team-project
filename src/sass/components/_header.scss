@@ -250,32 +250,37 @@ h1{
     }   
 }
 
+.unicorne-picture{
+    display: none;
+}
+
  .promocode {
      position: absolute;
      color: var(--primary-accent-color);
      text-align: center;
-     font-family:Verdana, Tahoma, sans-serif;
+     font-family:'Titan one';
      letter-spacing: 0.04em;
      font-style: normal;
      font-size: 26px;
      font-weight: 400;
      top: 150px;
-     right: 270px;
+     right: 320px;
      text-transform: uppercase;
      transform: rotateZ(-90deg);
-     z-index: 2;
+     z-index: 1;
+     transition: transform 2500ms var(--timing-function);
     } 
 
     .ice-unicorn{
         font-size: 46px;
-        color: black;
+        color: snow;
     }
 
     .ice-unicorn2{
-        color: snow;
+        color:cyan;
     }
     .unicorne1{
-        color: violet;
+        color: yellow;
     }
     .unicorne2{
         color: indigo;
@@ -290,11 +295,11 @@ h1{
     }
 
     .unicorne5{
-        color: yellow;
+        color: violet;
     }
 
     .unicorne6 {
-    color: orange;
+    color: indigo;
     }
 
     .unicorne7 {
@@ -302,17 +307,13 @@ h1{
     }
 
     .unicorne8 {
-    color: violet;
-    }
-
-    .unicorne9 {
-    color: indigo;
-    }
+    color: orangered;
+    }   
 
     .hero__icecream-image {
      position: absolute;
      opacity: 1;
-     transition: transform 2500ms var(--timing-function);
+     transition: transform 2500ms var(--timing-function);     
  }
 
 .input__hero{    
@@ -568,7 +569,7 @@ h1{
     height: 446px;
     
 }
-.hero--milk-picture, .hero--right-section{
+.hero--milk-picture, .hero--right-section,.promocode{
     display: none;
 }
 
@@ -686,6 +687,10 @@ h1{
         }
 
     // hero
+
+    .promocode{
+        display: none;
+    }
 
 .hero__heading {
     font-size: 22px;
@@ -889,6 +894,17 @@ padding-top: 69px;
 
 }
 
+.unicorne-picture{
+    display: block;
+    position: absolute;
+    width: 300px;
+    right: 300px;
+    bottom: 180px;
+    z-index: 1;
+    transition: transform 2500ms var(--timing-function);
+    
+}
+
 .hero__icecream-image {
     right: 331px;
     bottom: 0;
@@ -896,7 +912,17 @@ padding-top: 69px;
 
     &:hover {
             transform: translateX(-100%);
+
+            & ~ .promocode{
+                transform: rotate(0);
+            }
+
+            & ~ .unicorne-picture{
+                transform: scale(2);
+            }
         }
+
+        
 }
 
 .hero__girl-image {
